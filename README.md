@@ -1,6 +1,6 @@
-# CopyFix — All-in-One Clipboard Manager, Note Taker & AI Writing Tool
+# CopyFix — Private Clipboard Manager, Note Taker & AI Writing Tool
 
-> An all-in-one workspace for macOS: an advanced clipboard manager, note taker, and AI writing tool working seamlessly together. Free download.
+> A private macOS clipboard workspace with notes, searchable images, completely offline local AI, and direct BYOK provider support. Free to use, with a one-time Pro unlock and no subscriptions.
 
 **Website:** [copyfix.app](https://copyfix.app) · **Download:** [copyfix.app/download](https://copyfix.app/download) · **Pricing:** [copyfix.app/#pricing](https://copyfix.app/#pricing)
 
@@ -10,9 +10,9 @@
 
 CopyFix is an **all-in-one workspace for Mac** that combines a clipboard manager, a note taker, and an AI writing tool into a single application working seamlessly together.
 
-As a **clipboard manager**, it captures everything you copy — text and images — keeps it searchable, and pastes any clip back into any app with a global hotkey. As a **note taker**, it lets you pin clips, organize them, and attach personal notes. And as an **AI writing tool**, it can rewrite, translate, summarise, or reformat your text — locally on your Mac via Apple's MLX framework, or in the cloud via CopyFix Cloud.
+As a **clipboard manager**, it captures what you copy — text and images — keeps it searchable, and pastes any clip back into any app with a global hotkey. As a **note taker**, it lets you pin clips, organize them, and attach personal notes. And as an **AI writing tool**, it can rewrite, translate, summarise, or reformat your text with local models that run completely offline on your Mac, or with your own OpenAI-compatible, Claude, or Gemini key.
 
-These tools work perfectly together, but AI is always opt-in and never runs unless you trigger it.
+These tools work together, but AI is always opt-in and never runs unless you trigger it. BYOK requests are sent directly from the app to the provider you choose, without proxying through CopyFix middleware.
 
 ## Table of contents
 
@@ -27,13 +27,13 @@ These tools work perfectly together, but AI is always opt-in and never runs unle
 
 ## Features
 
-- **10,000-item clipboard history.** Every text and image you copy is captured automatically. Trim the rest with configurable history limits.
+- **Clipboard history you control.** Every text and image you copy is captured automatically. Free users can keep up to 1,000 items; Pro raises the limit to 10,000. Older non-pinned items are trimmed automatically.
 - **Integrated Note Taker.** Pin the clips you care about, organize them, and attach detailed notes directly within the app, turning your clipboard into a powerful knowledge base.
 - **Search images by what's in them.** CopyFix runs on-device OCR and image classification on screenshots and copied pictures, so you can find them later by typing words you remember seeing.
 - **Paste anywhere with one hotkey.** A configurable global hotkey opens CopyFix as a non-intrusive panel, grabs your current selection, and pastes the chosen item straight back into the app you were using.
 - **Works in every app.** Mail, Pages, Xcode, VS Code, Slack, your browser — if the macOS Accessibility API can read a selection, CopyFix can work with it. A Services menu entry is included too.
-- **Optional local AI integration.** When you want a quick rewrite, translation, or summary, CopyFix can run a language model locally on Apple Silicon via Apple's MLX framework. Your selection never leaves the Mac.
-- **Optional cloud AI integration.** Prefer a stronger model? CopyFix Cloud handles the heavier rewrites without you needing to manage any external accounts or API keys. AI is fully opt-in and never runs unless you trigger it.
+- **Optional offline local AI.** When you want a quick rewrite, translation, or summary, CopyFix can run a language model locally on Apple Silicon via Apple's MLX framework. After the model is downloaded, prompts are processed completely offline and your selection never leaves the Mac.
+- **Optional BYOK provider support.** Prefer a provider model? Pro unlocks bring-your-own-key support for OpenAI-compatible APIs, Claude, and Gemini. Requests go directly from CopyFix to the provider, not through CopyFix middleware.
 
 ## How CopyFix works
 
@@ -43,11 +43,11 @@ These tools work perfectly together, but AI is always opt-in and never runs unle
 
 ## Privacy
 
-Your clipboard is some of the most sensitive data on your Mac. CopyFix runs entirely on-device by default, and any AI integration is strictly opt-in.
+Your clipboard is some of the most sensitive data on your Mac. CopyFix runs on-device by default, and any AI integration is strictly opt-in.
 
-- **Clipboard stays on your Mac.** The clipboard history and image OCR both run locally. Nothing is uploaded anywhere unless you explicitly start a cloud AI request.
-- **AI is opt-in, local-first.** When you do ask for a rewrite, CopyFix can run a model on-device via Apple's MLX framework. CopyFix Cloud is only used when you choose it, and a privacy reminder is shown before the first cloud request.
-- **Keys in the Keychain.** API keys are stored in the macOS Keychain, not in plain-text preferences. Clipboard history lives in a local SwiftData store under Application Support.
+- **Clipboard stays on your Mac.** Clipboard history, prompt history, image OCR, and local model execution are local. Nothing is uploaded anywhere unless you explicitly send selected content to a BYOK provider.
+- **Local AI is completely offline.** When you choose the local provider, CopyFix runs an Apple MLX model on your Mac. After the model is downloaded, prompts are processed without network access.
+- **BYOK is direct.** API keys are stored in the macOS Keychain, not in plain-text preferences. BYOK requests are sent directly to OpenAI-compatible APIs, Claude, or Gemini without a CopyFix proxy or middleware.
 
 Read the full [privacy policy](https://copyfix.app/privacy).
 
@@ -61,7 +61,7 @@ Read the full [privacy policy](https://copyfix.app/privacy).
 ## System requirements
 
 - macOS 14 (Sonoma) or later.
-- Apple Silicon Mac (M1 or newer) for the optional on-device AI features. The clipboard manager itself runs on both Apple Silicon and Intel Macs.
+- Apple Silicon Mac (M1 or newer) for optional local AI features. The clipboard manager itself runs on both Apple Silicon and Intel Macs.
 - Accessibility permission, so CopyFix can read selections from and paste into other apps.
 
 ## Install
@@ -85,19 +85,19 @@ No. The clipboard manager, image search, pinning, notes, and paste-anywhere hotk
 
 ### Does CopyFix work without an internet connection?
 
-Yes. The clipboard manager and image OCR are entirely local. If you want AI rewrites offline, CopyFix can run language models locally on Apple Silicon using Apple's MLX framework. Cloud providers are optional and only used when you explicitly select one.
+Yes. The clipboard manager and image OCR are entirely local. If you want AI rewrites offline, CopyFix can run language models locally on Apple Silicon using Apple's MLX framework. BYOK providers are optional and only used when you explicitly select one.
 
 ### How does the AI integration work?
 
-If you choose to use the AI integration, CopyFix can run a model on-device via Apple's MLX framework, or use CopyFix Cloud for stronger models. You can switch between them at any time from settings, or turn the AI features off entirely.
+If you choose to use the AI integration, CopyFix can run a model on-device via Apple's MLX framework. Pro users can also bring their own OpenAI-compatible, Claude, or Gemini key. BYOK requests are sent directly from the app to the provider, without CopyFix proxying them.
 
 ### Where is my clipboard history stored?
 
-Locally, in a SwiftData store under your Mac's Application Support directory. Full-resolution clipboard images are saved as PNG files on disk; only thumbnails are kept in memory. Nothing is uploaded unless you explicitly run a cloud transformation.
+Locally, in a SwiftData store under your Mac's Application Support directory. Full-resolution clipboard images are saved as PNG files on disk; only thumbnails are kept in memory. Nothing is uploaded unless you explicitly run a BYOK provider request.
 
 ### How big can the clipboard history get?
 
-You can keep up to roughly 10,000 items. Older non-pinned items are trimmed automatically; pinned items are kept regardless of the limit.
+Free users can keep up to 1,000 items. Pro unlocks up to 10,000 items. Older non-pinned items are trimmed automatically; pinned items are kept regardless of the limit.
 
 ### Can I search my clipboard images?
 
@@ -105,7 +105,7 @@ Yes. CopyFix runs on-device OCR and image classification on every captured image
 
 ### How much does CopyFix cost?
 
-The clipboard manager, image search, and the optional local AI integration are free. CopyFix Pro is a one-time lifetime license that unlocks higher rate limits and stronger cloud models for users who want the cloud AI integration. See [copyfix.app/#pricing](https://copyfix.app/#pricing) for current pricing.
+CopyFix is free to use. CopyFix Pro is a one-time lifetime license that unlocks advanced features forever, including the 10,000-item history limit and BYOK support for OpenAI-compatible APIs, Claude, and Gemini. There are no subscriptions. See [copyfix.app/#pricing](https://copyfix.app/#pricing) for current pricing.
 
 ### Is CopyFix on the Mac App Store?
 
