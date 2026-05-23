@@ -1,6 +1,6 @@
-# CopyFix — Clipboard Manager for Mac with History, OCR & AI
+# CopyFix — All-in-One Clipboard Manager, Note Taker & AI Writing Tool
 
-> An advanced clipboard manager for macOS with clipboard history, image OCR search, and optional AI integration. Free download.
+> An all-in-one workspace for macOS: an advanced clipboard manager, note taker, and AI writing tool working seamlessly together. Free download.
 
 **Website:** [copyfix.app](https://copyfix.app) · **Download:** [copyfix.app/download](https://copyfix.app/download) · **Pricing:** [copyfix.app/#pricing](https://copyfix.app/#pricing)
 
@@ -8,9 +8,11 @@
 
 ## What is CopyFix?
 
-CopyFix is a **clipboard manager for Mac** that captures everything you copy — text and images — keeps it searchable, and pastes any clip back into any app with a global hotkey. When you want help editing, an **optional AI integration** can rewrite, translate, summarise, or reformat the clip you just grabbed — locally on your Mac via Apple's MLX framework, or in the cloud via CopyFix Cloud.
+CopyFix is an **all-in-one workspace for Mac** that combines a clipboard manager, a note taker, and an AI writing tool into a single application working seamlessly together.
 
-The clipboard manager works perfectly well on its own. AI is opt-in and never runs unless you trigger it.
+As a **clipboard manager**, it captures everything you copy — text and images — keeps it searchable, and pastes any clip back into any app with a global hotkey. As a **note taker**, it lets you pin clips, organize them, and attach personal notes. And as an **AI writing tool**, it can rewrite, translate, summarise, or reformat your text — locally on your Mac via Apple's MLX framework, or in the cloud via CopyFix Cloud.
+
+These tools work perfectly together, but AI is always opt-in and never runs unless you trigger it.
 
 ## Table of contents
 
@@ -25,7 +27,8 @@ The clipboard manager works perfectly well on its own. AI is opt-in and never ru
 
 ## Features
 
-- **10,000-item clipboard history.** Every text and image you copy is captured automatically. Pin the ones you care about, attach notes, and trim the rest with configurable history limits.
+- **10,000-item clipboard history.** Every text and image you copy is captured automatically. Trim the rest with configurable history limits.
+- **Integrated Note Taker.** Pin the clips you care about, organize them, and attach detailed notes directly within the app, turning your clipboard into a powerful knowledge base.
 - **Search images by what's in them.** CopyFix runs on-device OCR and image classification on screenshots and copied pictures, so you can find them later by typing words you remember seeing.
 - **Paste anywhere with one hotkey.** A configurable global hotkey opens CopyFix as a non-intrusive panel, grabs your current selection, and pastes the chosen item straight back into the app you were using.
 - **Works in every app.** Mail, Pages, Xcode, VS Code, Slack, your browser — if the macOS Accessibility API can read a selection, CopyFix can work with it. A Services menu entry is included too.
@@ -74,7 +77,7 @@ CopyFix is distributed directly from copyfix.app and updates itself via [Sparkle
 
 ### What is CopyFix?
 
-CopyFix is an advanced clipboard manager for macOS. It captures everything you copy — text and images — keeps it searchable, and pastes any clip back into any app with a global hotkey. An optional AI integration can rewrite, translate, summarise, or reformat the clip you just grabbed when you want it to, but the clipboard manager works perfectly well on its own.
+CopyFix is an all-in-one solution for macOS featuring a clipboard manager, a note taker, and an AI writing tool. It captures everything you copy, lets you attach notes to your clips, and includes an optional AI integration to rewrite, translate, summarise, or reformat your text. All of this is within a single app, working seamlessly together. The clipboard and notes work perfectly well entirely on their own, and AI is strictly opt-in.
 
 ### Do I have to use the AI features?
 
