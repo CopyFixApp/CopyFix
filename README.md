@@ -105,7 +105,7 @@ Yes. CopyFix runs on-device OCR and image classification on every captured image
 
 ### How much does CopyFix cost?
 
-The clipboard manager, image search, and the optional local AI integration are free. CopyFix Pro is a paid subscription that unlocks higher rate limits and stronger cloud models for users who want the cloud AI integration. See [copyfix.app/#pricing](https://copyfix.app/#pricing) for current pricing.
+The clipboard manager, image search, and the optional local AI integration are free. CopyFix Pro is a one-time lifetime license that unlocks higher rate limits and stronger cloud models for users who want the cloud AI integration. See [copyfix.app/#pricing](https://copyfix.app/#pricing) for current pricing.
 
 ### Is CopyFix on the Mac App Store?
 
