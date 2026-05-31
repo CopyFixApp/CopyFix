@@ -1,6 +1,6 @@
-# CopyFix — Private Clipboard Manager, Note Taker & AI Writing Tool
+# CopyFix — Mac Clipboard Manager with Notes and Local AI
 
-> A private macOS clipboard workspace with notes, searchable images, local AI that runs on-device after model download, and direct BYOK provider support. Free to use, with a one-time Pro unlock and no subscriptions.
+> CopyFix is a Mac clipboard manager with notes and local AI built into the same workflow. Search text and images, rewrite text when you ask, and paste back in place.
 
 **Website:** [copyfix.app](https://copyfix.app) · **Download:** [copyfix.app/download](https://copyfix.app/download) · **Pricing:** [copyfix.app/#pricing](https://copyfix.app/#pricing)
 
@@ -8,11 +8,11 @@
 
 ## What is CopyFix?
 
-CopyFix is a **private clipboard workspace for Mac** that combines clipboard history, per-clip notes, and optional AI text transformation in one app.
+CopyFix is a **Mac clipboard manager with notes and local AI** built into the same workflow.
 
-As a **clipboard manager**, it captures text and images, keeps them searchable, and can paste clips back into the app you were using. As a **note taker**, it lets you pin clips and attach personal notes. As an **AI writing tool**, it can rewrite, translate, summarise, or reformat your text with a local Apple MLX model after download, or with your own OpenAI-compatible, Claude, or Gemini key.
+It captures text and images, keeps clipboard history searchable, lets you attach notes to clips, and can rewrite, translate, summarise, or reformat text when you ask. CopyFix then pastes the original or rewritten result back into the app you were using.
 
-These tools work together, but AI is always opt-in and never runs unless you trigger it. BYOK is Pro-only, and BYOK requests are sent directly from the app to the provider you choose, without proxying through CopyFix middleware.
+Clipboard history stays on your Mac. Local AI runs on-device after the model is downloaded. BYOK is Pro-only, and BYOK requests are sent directly from the app to the provider you choose, without proxying through CopyFix middleware.
 
 ## Table of contents
 
@@ -79,7 +79,7 @@ CopyFix is distributed directly from copyfix.app and updates itself via [Sparkle
 
 ### What is CopyFix?
 
-CopyFix is a private clipboard workspace for macOS featuring clipboard history, per-clip notes, image search, and optional AI text transformation. The clipboard and notes work on their own, and AI is strictly opt-in.
+CopyFix is a Mac clipboard manager with notes and local AI built into the same workflow. It captures text and images, lets you attach notes, can rewrite or summarise text when you ask, and pastes results back into the app you were using. The clipboard and notes work on their own, and AI is strictly opt-in.
 
 ### Do I have to use the AI features?
 
@@ -123,4 +123,4 @@ CopyFix is distributed directly from [copyfix.app](https://copyfix.app) and upda
 
 ---
 
-<sub>Keywords: clipboard manager for Mac · macOS clipboard manager · clipboard history Mac · clipboard manager with OCR · image clipboard search · Mac copy paste history · clipboard manager with AI · advanced clipboard manager · AI text rewriter Mac · CopyFix.</sub>
+<sub>Keywords: clipboard manager for Mac · macOS clipboard manager · clipboard history Mac · clipboard manager with OCR · image clipboard search · Mac copy paste history · clipboard manager with AI · clipboard notes · AI text rewriter Mac · CopyFix.</sub>
